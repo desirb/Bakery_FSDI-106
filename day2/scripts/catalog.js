@@ -2,18 +2,6 @@ var catalog = []; //array
 var categories = [];
 
 function fetchData(){
-
-    catalog = [
-        {
-            code: '001',
-            title: 'Banana Pudding',
-            price: '22.99',
-            image: 'https://spaceshipsandlaserbeams.com/wp-content/uploads/2019/04/Easy-Banana-Pudding-Recipe.jpg',
-            quantity: '',
-            category: 'Pudding'
-        },
-    ]
-
     $.ajax({
         url: 'http://restclass.azurewebsites.net/api/points',
         type: 'GET',
